@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="covid boyacá" />
+    <meta
+      name="description"
+      content="Noticias sobre el Covid-19 en Boyacá Colombia"
+    />
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Covid Boyacá</title>
+  </head>
+  <body>
+    <!--nuevas noticias-->
+    <input type="checkbox" id="cerrar">
+    <label for="cerrar" id="btn-cerrar">X</label>
+    <div class="modal">
+      <div class="contenido-modal">
+        <h2>Inicia sesion para dejar tu comentarios en la sección de noticias </h2>
+        <p>Infórmese sobre las noticias de coronavirus en Boyacá,
+          nuevos casos de contagio y avances de la pandemia.</p>
+        <a href="login.php">Inicio de Sesión</a>
+      </div>
+    </div> 
+
+    <div class="contenedor contenido-centrado" id="1">
+      <!--header-->
+      <header class="contenedor contenido-centrado">
+        <div class="menu-pequeño">
+          <a href="nosotros.html">Acerca de Nosotros</a>
+          <a href="noticias.html">Comentarios</a>
+          <div class="iconos-sociales">
+            <a href="#"><img src="img/facebook.png" /></a>
+            <a href="#"><img src="img/twitter.png" /></a>
+            <a href="#"><img src="img/youtube.png" /></a>
+          </div>
+          <a href="login.php">Iniciar Sesion</a>
+          <a href="Registro.php">Regístrate</a>
+        </div>
+        <div class="logo">
+          <div class="texto-logo">
+          <h1>Boyacá</h1>
+          <h2>Covid-19</h2>
+        </div>
+        <div class="imagen-logo">
+          <img src="img/casa.jpg" alt="">
+        </div>
+        </div>
+        <div class="contenedor-menu">
+          <nav class="menu">
+            <ul>
+              <li><a href="#1">Inicio</a></li>
+              <li><a href="#2">Casos en Boyacá</a></li>
+              <li><a href="#3">Municipios Infectados</a></li>
+              <li><a href="#4">Pico y Cedulas</a></li>
+              <li><a href="#5">Precaución</a></li>
+              <li><a href="#6">Noticias Importantes</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="fondo-imagen">
+          <div class="contenido-inicio">
+            <h2>Coronavirus</h2>
+            <p>
+              Infórate sobre las noticias de coronavirus en Boyacá, <br />
+              nuevos casos de contagio y avances de la pandemia.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!--casos en boyaca-->
+      <section>
+        <div class="contenedor-boyaca" id="2">
+          <div class="titulo-numero-boyaca">
+            <h2>Número de Casos en Boyacá</h2>
+          </div>
+          <div class="casos-boyaca">
+            <div class="caso">
+              <img src="img/triste.png" alt="" />
+              <h4>Casos positivos</h4>
+              <p>162</p>
+            </div>
+            <div class="caso">
+              <img src="img/emoji (1).png" alt="" />
+              <h4>Recuperados</h4>
+              <p>58</p>
+            </div>
+            <div class="caso">
+              <img src="img/funeral.png" alt="" />
+              <h4>Fallecidos</h4>
+              <p>5</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--municipios infectados-->
+      <div class="municipios-infectados" id="3">
+        <h2>MUNICIPIOS INFECTADOS</h2>
+        <div class="contenedor-municipios">
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Tunja</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 46</p>
+              <p>Confirmados 22</p>
+              <p>Fallecidos 3</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Chiquinquirá</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 13</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Duitama</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 7</p>
+              <p>Fallecidos 3</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Togüí</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 14</p>
+              <p>Confirmados 5</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Sogamoso</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 7</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Paipa</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 6</p>
+              <p>Fallecidos 1</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Villa de Leyva</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 4</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Santana</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 4</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Socha</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 4</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Garagoa</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 4</p>
+              <p>Fallecidos 1</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Turmequé</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 3</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Cubará</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Tenza</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Moniquirá</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Aquitania</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Samacá</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 1</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Cómbita</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Paya</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Cucaita</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 2</p>
+              <p>Fallecidos 1</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Oicatá</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Santa Sofía</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Caldas</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Muzo</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Santa Rosa de Viterbo</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Tinjacá</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Viracachá</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Miraflores</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Tipacoque</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Sutamarchán</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+          <div class="caja">
+            <div class="Municipios">
+              <h3>Ventaquemada</h3>
+            </div>
+            <div class="contenido-municipios">
+              <p>Casos 17</p>
+              <p>Confirmados 1</p>
+              <p>Fallecidos 0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--imagen prevencion-->
+      <div class="titulo-lavar-manos">
+        <h2>PREVENCIÓN CONTRA EL CORONAVIRUS</h2>
+        <div class="lavar-manos">
+          <img src="img/lavar-manos.jpg" alt="" />
+        </div>
+      </div>
+
+      <!--cedulas-->
+      <div class="pico-cedulas">
+      <h2>Pico y Cedulas en Chiquinquirá- Boyacá</h2>
+    </div>
+      <div class="dos-columnas" id="4">
+        <div class="columna">
+          <div class="titulo-negro">
+            <h2>CÉDULAS</h2>
+          </div>
+          <div class="contenido-cedulas">
+            <table class="cedulas">
+              <tr>
+                <th>Dias</th>
+                <th>De 9:00 am a 11:00 am</th>
+                <th>De 2:00 pm a 4:00 pm</th>
+              </tr>
+              <tr>
+                <td>lunes</td>
+                <td>0 - 1</td>
+                <td>2 - 3</td>
+              </tr>
+              <tr>
+                <td>Martes</td>
+                <td>4 - 5</td>
+                <td>6 - 7</td>
+              </tr>
+              <tr>
+                <td>Miercoles</td>
+                <td>8 - 9</td>
+                <td>0 - 1</td>
+              </tr>
+              <tr>
+                <td>Jueves</td>
+                <td>2 - 3</td>
+                <td>4 - 5</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>6 - 7</td>
+                <td>8 - 9</td>
+              </tr>
+              <tr>
+                <tr>
+                  <th>Dias</th>
+                  <th>De 7:00 am a 9:00 am</th>
+                  <th>De 11:00 pm a 1:00 pm</th>
+                  <th>De 3:00 pm a 5:00 pm</th>
+                </tr>
+              <tr>
+                <td>Sabado</td>
+                <td>0 - 1</td>
+                <td>2 - 3</td>
+                <td>4 - 5</td>
+              </tr>
+              <tr>
+                <th>Dias</th>
+                <th>De 7:00 am a 9:00 am</th>
+                <th>De 9:00 pm a 11:00 pm</th>
+              </tr>
+              <tr>
+                <td>Domingo</td>
+                <td>6 - 7</td>
+                <td>8 - 9</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="columna">
+          <div class="titulo-negro">
+            <h2>COMERCIO</h2>
+          </div>
+          <div class="contenido-cedulas">
+            <table>
+              <tr>
+                <th>Dias</th>
+                <th>De 8:00 am a 12:00 pm</th>
+                <th>De 2:00 pm a 6:00 pm</th>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>1 - 3</td>
+                <td>5 - 7 - 9</td>
+              </tr>
+              <tr>
+                <td>Domingo</td>
+                <td>0 - 2</td>
+                <td>4 - 6 - 8</td>
+              </tr>
+              <tr></tr>
+            </table>
+          </div>
+          <div class="titulo-negro">
+            <h2>PICO Y PLACA</h2>
+          </div>
+          <div class="contenido-cedulas">
+            <table>
+              <tr>
+                <th>Finalizadas en Impres</th>
+                <th>Finalizadas en Pares</th>
+              </tr>
+              <tr>
+                <td>No podrán salir en días impares</td>
+                <td>No podrán salir en días pares</td>
+              </tr>
+              <tr></tr>
+            </table>
+          </div>
+          <div class="titulo-negro">
+            <div class="toque">
+            <h2>TOQUE DE QUEDA</h2>
+          </div>
+          </div>
+          <div class="contenido-cedulas">
+            <table>
+              <tr>
+                <th>Entre semana</th>
+                <th>Fin de semana</th>
+                <th>Tiendas</th>
+              </tr>
+              <tr>
+                <td>inicia 6:00 pm</td>
+                <td>inicia 5:00 pm</td>
+                <td>Cerrar a las 5:00 pm</td>
+              </tr>
+              <tr></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!--precaucion-->
+        <div id="5">
+        <h2>LUGARES DONDE DEBES TENER MÁS PRECAUCIÓN</h2>
+        <div class="precaucion" >
+          <div class="muyalto">
+            <h2>MUY ALTO</h2>
+            <ul>
+              <li>Hospitales</li>
+              <li>Transporte Público</li>
+              <li>Reuniones familiares o con amigos</li>
+              <li>Bares - Discotecas</li>
+              <li>Eventos Religiosos</li>
+              <li>Eventos Masivos</li>
+              <li>Plazas de Mercado</li>
+              <li>Gimnasios</li>
+            </ul>
+          </div>
+          <div class="alto">
+            <h2>Alto</h2>
+            <ul>
+              <li>Bancons</li>
+              <li>Ascensores</li>
+              <li>Cines</li>
+              <li>Super Mercados</li>
+              <li>Universidades</li>
+              <li>Colegios</li>
+            </ul>
+          </div>
+          <div class="alto-medio">
+            <h2>Alto Medio</h2>
+            <ul>
+              <li>Oficinas con cubiculos menos de 2 metros</li>
+              <li>Empresas de Producción</li>
+              <li>Peluquerias</li>
+              <li>Hospitales</li>
+              <li>Centros Comerciales</li>
+              <li>Restaurantes</li>
+              <li>Consultorios Médicos</li>
+            </ul>
+          </div>
+          <div class="medio">
+            <h2>Medio</h2>
+            <ul>
+              <li>Farmacias</li>
+              <li>Vehiculos</li>
+            </ul>
+          </div>
+          <div class="bajo">
+            <h2>Bajo</h2>
+            <ul>
+              <li>Vias Públicas</li>
+              <li>Montar visicleta</li>
+              <li>Casa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!--lo que dicen-->
+      <div class="que-dicen" id="6">
+        <h2>LO QUE DICEN DEL CORONAVIRUS COVID-19</h2>
+        <div class="conenedor-dicen">
+          <div class="imagen-dicen">
+            <img src="img/presidente.jpg" alt="" />
+            <h4>Iván Duque</h4>
+            <p>
+              según los expertos, el pico del coronavirus podría llegar hacia
+              mediados de agosto. <br />
+              A partir del lunes primero de junio continuaremos recuperando vida
+              productiva en la mayor parte del país, y daremos este paso
+              apoyados en unos protocolos de bioseguridad rigurosos y de acuerdo
+              con las variables epidemiológicas de cada región.
+            </p>
+            <a href="noticias.html" class="boton">Ver Noticia</a>
+          </div>
+          <div class="imagen-dicen">
+            <img
+              src="img/claudia.jpg"
+              alt="Depende de cada colombiano la reducción del riesgo de contagio - EL TIEMPO"
+            />
+            <h4>Claudia López</h4>
+            <p>
+              “El señor Presidente permite la salida a la calle. Va a haber
+              clientes en los centros comerciales, por supuesto van a ir. Es un
+              engaño decirle a la ciudadanía que hay aislamiento preventivo. No
+              hay tal. El señor Presidente acabó la cuarentena", indicó López
+              <br />
+              lo que hay es la autorización de la reactivación económica para
+              privilegiar el empleo. Esa es la decisión del Presidente, él asume
+              las consecuencias
+            </p>
+            <a href="noticias.html" class="boton">Ver Noticia</a>
+          </div>
+          <div class="imagen-dicen">
+            <img src="img/ramiro.jpg" alt="" />
+            <h4>Ramiro Barragán</h4>
+            <p>
+              Por decreto 273 del 31 de mayo de 2020, se confirma ordenando el
+              aislamiento preventivo obligatorio desde las cero horas (00:00 am)
+              del día 1 de junio de 2020 hasta las cero horas (00:00 am) del día
+              1 de julio de 2020, en el marco de la emergencia sanitaria por
+              causa del coronavirus COVID-19.
+            </p>
+            <a href="noticias.html" class="boton">Ver Noticia</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <p class="copyright">todos los derechos reservados 2020 &copy;</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
